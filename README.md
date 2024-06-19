@@ -66,3 +66,11 @@ Use interface wlan0, use port 2222, use http communications. Also generate malic
 python3 main.py -s BLABLABLA -i wlan0 -p 2222 -poc android-x64
 ```
 
+# References
+[Dependency Confusion: How I Hacked Into Apple, Microsoft and Dozens of Other Companies](https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610)
+
+[A Road from Dependency Confusion to RCE](https://blog.securelayer7.net/a-road-from-dependency-confusion-to-rce/)
+
+[Malicious Python Packages and Code Execution via pip download](https://embracethered.com/blog/posts/2022/python-package-manager-install-and-download-vulnerability/)
+
+[Ruby gem installations can expose you to lockfile injection attacks](https://snyk.io/blog/ruby-gem-installation-lockfile-injection-attacks/)
