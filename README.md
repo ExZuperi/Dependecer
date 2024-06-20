@@ -1,5 +1,5 @@
 # Dependecer
-Project to handle requests from malicious PoC of Dependency Confusion or Similar Name packages. Also can be used to generate those packages (gem, npm, pip).
+Project to handle requests from malicious PoC of Dependency Confusion or Similar Name packages (*in access.log*). Also can be used to generate those packages (gem, npm, pip).
 
 # Installation instructions
 Will clone project, goto it's directory and install all requirements
@@ -65,6 +65,15 @@ Use interface wlan0, use port 2222, use http communications. Also generate malic
 ```
 python3 main.py -s BLABLABLA -i wlan0 -p 2222 -poc android-x64
 ```
+# Restrictions
+According to the code in ServerSide.py, logging to the access.log file has these limitations:
+- Packet name - up to 100 characters
+- Hostname and username - up to 150 characters
+- PWD - up to 500 characters 
+But if they will be exceeded, (at the same time correctly filled) the server will simply spit out data in json format to the console (they will be displayed if the script was for example run with nohup in nohup.out).
+
+# Law restrictions
+The author does not bear any responsibility for the actions of the user using this script. It is presented as a tutorial to demonstrate Dependency Confusion or Similar Name packages attacks (Supply Chain Vulnerabilities). You fully understand and accept this responsibility when using the project
 
 # References
 [Dependency Confusion: How I Hacked Into Apple, Microsoft and Dozens of Other Companies](https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610)
