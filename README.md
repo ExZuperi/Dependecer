@@ -70,6 +70,7 @@ According to the code in ServerSide.py, logging to the access.log file has these
 - Packet name - up to 100 characters
 - Hostname and username - up to 150 characters
 - PWD - up to 500 characters 
+
 But if they will be exceeded, (at the same time correctly filled) the server will simply spit out data in json format to the console (they will be displayed if the script was for example run with nohup in nohup.out).
 
 # Law restrictions
