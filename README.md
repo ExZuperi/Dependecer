@@ -39,6 +39,7 @@ options:
   -is, --ignore_server
                         Don't start server that will handle connections. Can be useful when you create a lot of packages
 ```
+Script will generate a file named `access.log` after the first run and will wait for incoming connections to log it. Additionally, the directory `certificates` will be created if the HTTPS method is specified. If you add `--poc {poc_name}`, a directory will be created with subdirectories `{poc_name}/npm`, `{poc_name}/pip`, and `{poc_name}/gem`.
 
 # Examples
 ## Recommended method
