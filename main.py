@@ -48,7 +48,7 @@ if __name__ == "__main__":
     ssl_enabled = str(args.ssl).lower() == "true"
 
     if ssl_enabled:
-        if (((args.cert_file is None) and (args.key_file is None)) and (args.common_name is None)) and args.ignore_server is None:
+        if (((args.cert_file is None) and (args.key_file is None)) and (args.common_name is None)) and args.ignore_server is not None:
             parser.error("When SSL is enabled, both --cert_file and --key_file arguments are required or common name should be provided to create those files.")
 
     if args.interface:
